@@ -328,7 +328,7 @@ nav a:hover {
 
 /* Mobile Styles (default) */
 nav {
-  display: block;
+  display: none; /* Hide the nav by default on mobile */
   background-color: #333;
 }
 
@@ -341,8 +341,32 @@ nav a {
   border-bottom: 1px solid #444;
 }
 
-/* Desktop Styles */
+/* Toggle the nav when the 'open' class is added */
+nav.open {
+  display: block;
+}
+
+/* Hamburger button */
+.nav-toggle {
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+}
+
+/* Larger screens (desktop) */
 @media screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none; /* Hide the toggle button on larger screens */
+  }
+
+  nav {
+    display: block; /* Show the nav by default on desktop */
+  }
+
   nav ul {
     flex-direction: row;
     justify-content: space-around;
@@ -351,5 +375,29 @@ nav a {
   nav a {
     border: none;
     padding: 15px 20px;
+  }
+}
+
+
+
+/* Hide navigation on small screens */
+.navigation #navbar {
+  display: none;
+}
+
+/* When 'active' class is added, show the navbar */
+.navigation #navbar.active {
+  display: block;
+}
+
+/* Adjust for screens wider than mobile (e.g., desktop) */
+@media screen and (min-width: 768px) {
+  .navigation #navbar {
+    display: block; /* Always visible on larger screens */
+  }
+
+  /* Hide the hamburger icon on larger screens */
+  .nav-toggle {
+    display: none;
   }
 }
