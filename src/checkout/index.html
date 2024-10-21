@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Checkout</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/checkout.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="divider header" id="main-header"></header>
+
+    <!-- Main Section -->
+    <main class="divider checkout container">
+      <h2 class="checkout__title">Review & Place your Order</h2>
+
+      <!-- Checkout Form Section -->
+      <section class="checkout__form">
+        <form name="checkout" class="form">
+          <!-- Shipping Information -->
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Shipping</legend>
+
+            <div class="form__group checkout__name">
+              <label for="fname" class="form__label">First Name</label>
+              <input name="fname" class="form__input" required />
+
+              <label for="lname" class="form__label">Last Name</label>
+              <input name="lname" class="form__input" required />
+            </div>
+
+            <div class="form__group checkout__address">
+              <label for="street" class="form__label">Street</label>
+              <input name="street" class="form__input" required />
+
+              <label for="city" class="form__label">City</label>
+              <input name="city" class="form__input" required />
+
+              <label for="state" class="form__label">State</label>
+              <input name="state" class="form__input" required />
+
+              <label for="zip" class="form__label">Zip</label>
+              <input name="zip" id="zip" class="form__input" required />
+            </div>
+          </fieldset>
+
+          <!-- Payment Information -->
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Payment</legend>
+
+            <label for="cardNumber" class="form__label">Card Number</label>
+            <input
+              name="cardNumber"
+              class="form__input"
+              pattern="\d{16}"
+              placeholder="1234 1234 1234 1234"
+              required
+            />
+
+            <label for="expiration" class="form__label">Expiration</label>
+            <input
+              name="expiration"
+              class="form__input"
+              placeholder="mm/yy"
+              required
+            />
+
+            <label for="code" class="form__label">Security Code</label>
+            <input
+              name="code"
+              class="form__input"
+              pattern="\d{3}"
+              placeholder="123"
+              required
+            />
+          </fieldset>
+
+          <!-- Order Summary -->
+          <fieldset class="form__fieldset checkout-summary">
+            <legend class="form__legend">Order Summary</legend>
+            <ul class="order-summary__list">
+              <li class="order-summary__item">
+                <label for="cartTotal" class="form__label">
+                  Item Subtotal <span id="num-items"></span>
+                </label>
+                <p
+                  name="cartTotal"
+                  id="cartTotal"
+                  class="order-summary__value"
+                ></p>
+              </li>
+              <li class="order-summary__item">
+                <label for="shipping" class="form__label"
+                  >Shipping Estimate</label
+                >
+                <p id="shipping" class="order-summary__value"></p>
+              </li>
+              <li class="order-summary__item">
+                <label for="tax" class="form__label">Tax</label>
+                <p id="tax" class="order-summary__value"></p>
+              </li>
+              <li class="order-summary__item">
+                <label for="orderTotal" class="form__label"
+                  ><b>Order Total</b></label
+                >
+                <p id="orderTotal" class="order-summary__value"></p>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <button
+            id="checkoutSubmit"
+            type="submit"
+            class="button button--primary"
+          >
+            Checkout
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="main-footer"></footer>
+  </body>
+</html>
