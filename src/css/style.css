@@ -122,6 +122,10 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
+.cta-button a {
+  text-decoration: none; /* Removes underline */
+}
+
 .cta-button button {
   background-color: var(--secondary-color); /* Warm orange */
   color: var(--neutral-white);
@@ -141,7 +145,15 @@ button:hover {
 
 
 /* Cart icon styles */
-.cart {
+
+.cart-icon {
+  width: 40px; /* Adjust the width to your preference */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+
+
+.cart-icon {
   padding-top: 1em;
   position: relative;
   text-align: center;
@@ -150,6 +162,8 @@ button:hover {
 .cart svg {
   width: 25px;
 }
+
+
 .cart:hover svg {
   fill: var(--primary-color); /* Soft blue on hover */
 }
@@ -168,6 +182,17 @@ button:hover {
 .products {
   padding: 0.5em;
 }
+h2 .title {
+  color: #333;
+}
+
+h2 {
+  color: #333; /* Set the color of the entire h2 element to black */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
 .product-list {
   display: flex;
   flex-flow: row wrap;
@@ -195,6 +220,7 @@ button:hover {
 .product-card h3,
 .product-card p {
   margin: 0.5em 0;
+
 }
 
 .card__brand {
@@ -374,6 +400,7 @@ footer {
 .newsletter h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #444;
 }
 
 .newsletter p {

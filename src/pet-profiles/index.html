@@ -1,19 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Profile</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SequencePetCare | PetPofiles</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
-    <header>
-        <h1>Pet Profile</h1>
-        <p>Manage your pet's information and health records</p>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/main.js" type="module"></script>
+    
+  </head>
+
+  <body>
+    <header class="divider" id="main-header">
+        <div class="logo">
+            <img src="/images/logo.svg" alt="pet image for logo" />
+            <a href="/index.html">Sequence<span class="highlight">PetCare</span></a>
+          </div>
+          
+          <div class="cart">
+            <a href="/cart/index.html">
+                <img src="/images/cart.svg" alt="Cart Icon" class="cart-icon"/>
+            </a>
+          </div>
+      <button class="nav-toggle">☰</button> <!-- Hamburger button --> 
     </header>
+    
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pet-profiles/index.html">Pet Profiles</a></li>
+        <li><a href="pet-product.html">Pet Product</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav> 
 
     <main>
+        <h1>Pet Profile</h1>
+        <p>Manage your pet's information and health records</p>
         <!-- Pet Profile Form -->
         <section class="pet-profile-form">
             <h2>Create or Update Pet Profile</h2>
@@ -70,8 +94,8 @@
     <footer id="main-footer"></footer>
 
     <footer>
-        <p>&copy; 2024 Pet Care Planner | All Rights Reserved</p>
+        <p>&copy; 2024 Sequence PetCare | All Rights Reserved</p>
     </footer>
-
+    <script src="/js/navigation.js" type="module"></script>
 </body>
 </html>
