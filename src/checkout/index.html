@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sleep Outside | Checkout</title>
+    <title>Sequence PetCare | Checkout</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/checkout.js" type="module"></script>
   </head>
@@ -24,24 +24,24 @@
 
             <div class="form__group checkout__name">
               <label for="fname" class="form__label">First Name</label>
-              <input name="fname" class="form__input" required />
+              <input id="fname" name="fname" class="form__input" required />
 
               <label for="lname" class="form__label">Last Name</label>
-              <input name="lname" class="form__input" required />
+              <input id="lname" name="lname" class="form__input" required />
             </div>
 
             <div class="form__group checkout__address">
               <label for="street" class="form__label">Street</label>
-              <input name="street" class="form__input" required />
+              <input id="street" name="street" class="form__input" required />
 
               <label for="city" class="form__label">City</label>
-              <input name="city" class="form__input" required />
+              <input id="city" name="city" class="form__input" required />
 
               <label for="state" class="form__label">State</label>
-              <input name="state" class="form__input" required />
+              <input id="state" name="state" class="form__input" required />
 
               <label for="zip" class="form__label">Zip</label>
-              <input name="zip" id="zip" class="form__input" required />
+              <input id="zip" name="zip" id="zip" class="form__input" required />
             </div>
           </fieldset>
 
@@ -57,16 +57,16 @@
               placeholder="1234 1234 1234 1234"
               required
             />
-
             <label for="expiration" class="form__label">Expiration</label>
+            
             <input
               name="expiration"
               class="form__input"
-              placeholder="mm/yy"
+              placeholder="mm/yyyy"
               required
             />
 
-            <label for="code" class="form__label">Security Code</label>
+            <label for="code" class="form__label">CVV</label>
             <input
               name="code"
               class="form__input"

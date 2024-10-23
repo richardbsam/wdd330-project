@@ -5,10 +5,10 @@
 
   /* Updated colors */
   --primary-color: #6C9BCF; /* Soft blue */
-  --secondary-color: #FFA500; /* Warm orange */
+  --secondary-color: #e67a00; /* Warm orange */
   --neutral-white: #FFFFFF; /* White */
   --neutral-light-grey: #F2F2F2; /* Light Gray */
-  --accent-color: #6BCF6C; /* Green */
+  --accent-color: #3cbd3e; /* Green */
 
   /* sizes */
   --font-base: 18px;
@@ -36,18 +36,18 @@ header {
   background-color: var(--neutral-white); /* White header */
 }
 .logo {
-  line-height: 100px;
+  line-height: 80px;
   width: 300px;
   overflow: hidden;
   display: flex;
-  font-size: 30px;
+  font-size: 35px;
   text-align: right;
   font-family: var(--font-headline);
   color: var(--primary-color); /* Soft blue logo text */
 }
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .logo a {
   text-decoration: none;
@@ -58,7 +58,7 @@ header {
 }
 .hero .logo {
   position: absolute;
-  left: calc(50% - 60px);
+  left: calc(50% - 50px);
   bottom: -10px;
   background-color: var(--neutral-white); /* White background for logo */
 }
@@ -265,6 +265,7 @@ button:hover {
 /* Category section styles */
 .category {
   background-color: var(--neutral-white); /* White background */
+  
   border: 1px solid var(--neutral-light-grey); /* Light gray border */
   border-radius: 5px;
   overflow: hidden;
@@ -391,7 +392,7 @@ footer {
 
 #newsletter-form button {
   padding: 10px 20px;
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(--secondary-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -399,7 +400,7 @@ footer {
 }
 
 #newsletter-form button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 
@@ -424,18 +425,18 @@ nav a {
   display: block;
   padding: 10px;
   color: #fff;
-  background-color: #333;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: var(--accent-color)
 }
 
 /* Mobile Styles (default) */
 nav {
-  display: none; /* Hide the nav by default on mobile */
-  background-color: #333;
+  display: none;
+  background-color: var(--secondary-color);
 }
 
 nav ul {
@@ -444,7 +445,7 @@ nav ul {
 }
 
 nav a {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #555;
 }
 
 /* Toggle the nav when the 'open' class is added */
@@ -454,17 +455,20 @@ nav.open {
 
 /* Hamburger button */
 .nav-toggle {
-  background-color: #333;
-  color: white;
-  font-size: 1.5rem;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
   border: none;
   cursor: pointer;
   padding: 10px;
   display: block;
+  margin-right: 0; /* Ensure no margin on the left */
+  text-align: right; /* Align the content inside the button to the left */
+  position: relative; /* Optional for finer adjustments */
 }
 
 /* Larger screens (desktop) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
   .nav-toggle {
     display: none; /* Hide the toggle button on larger screens */
   }
@@ -474,13 +478,16 @@ nav.open {
   }
 
   nav ul {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-  }
+    justify-content: flex-end;
+   
+    }
+
 
   nav a {
     border: none;
-    padding: 15px 20px;
+    padding: 10px 25px;
   }
 }
 

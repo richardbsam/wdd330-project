@@ -1,11 +1,9 @@
-// Select DOM elements
+// Select the nav and the toggle button
 const navToggle = document.querySelector('.nav-toggle');
-const navbar = document.querySelector('#navbar');
+const nav = document.querySelector('nav');
 
-// Function to toggle 'active' class
-const toggleNavbar = () => {
-  navbar.classList.toggle('active');
-};
-
-// Add event listener for toggle button
-navToggle.addEventListener('click', toggleNavbar);
+// Add event listener to the toggle button
+navToggle.addEventListener('click', () => {
+  // Toggle the 'open' class on the nav element
+  nav.classList.toggle('open');
+});
