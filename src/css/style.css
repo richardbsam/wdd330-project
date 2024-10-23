@@ -1,3 +1,10 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 :root {
   --font-body: Arial, Helvetica, sans-serif;
@@ -20,7 +27,7 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+
   font-family: var(--font-body);
   font-size: var(--font-base);
   color: var(--primary-color); /* Use primary color for text */
@@ -31,6 +38,7 @@ img {
 }
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0 10px;
   background-color: var(--neutral-white); /* White header */
@@ -47,12 +55,13 @@ header {
 }
 .logo img {
   width: 80px;
-  height: 80px;
+  height: auto;
 }
 .logo a {
   text-decoration: none;
-  color: var(--font-body);
+  color: var(--font-body);   
 }
+
 .hero {
   position: relative;
 }
@@ -138,7 +147,7 @@ button:hover {
 }
 
 .cta-button button:hover {
-  background-color: var(--accent-color); /* Green hover */
+  background-color: #555; /* Green hover */
 }
 
 
@@ -540,4 +549,103 @@ nav.open {
   .nav-toggle {
     display: none;
   }
+}
+
+
+
+/*vdsvsvvd*/
+
+
+/* Main Content */
+main {
+  padding: 40px;
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+main p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Profile Display Section */
+.display-pet-profile {
+  margin-top: 40px;
+}
+
+.display-pet-profile h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.profile-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pet-photo {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-card h3 {
+  font-size: 22px;
+  color: #4CAF50;
+}
+
+.profile-card p {
+  font-size: 16px;
+  color: #555;
 }
