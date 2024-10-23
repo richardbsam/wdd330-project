@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | SequencePetCare</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/main.js" type="module"></script>
+    
+  </head>
+
+  <body>
+    <header class="divider" id="main-header">
+        <div class="logo">
+            <img src="/images/logo.svg" alt="pet image for logo" />
+            <a href="/.html">Sequence<span class="highlight">PetCare</span></a>
+          </div>
+          
+          <div class="cart">
+            <a href="/cart/index.html">
+                <img src="/images/cart.svg" alt="Cart Icon" class="cart-icon"/>
+            </a>
+          </div>
+      <button class="nav-toggle">☰</button> <!-- Hamburger button --> 
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pet-profiles/index.html">Pet Profiles</a></li>
+        <li><a href="#">Pet Product</a></li>
+        <li><a href="/contact/index.html">Contact Us</a></li>
+      </ul>
+    </nav> 
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Manage your pet's information and health records</p>
+        <!-- Pet Profile Form -->
+
+        <div class="social-media">
+            <h3>Follow Us on Social Media</h3>
+            <ul>
+                <li>
+                    <a href="https://whatsapp.com/sequencepetcare" target="blank">
+                        <img src="/images/whatsapp-icon.svg" alt="Whatsapp Icon" class="social-icon" />
+                        <span>WhatsApp</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://facebook.com/sequencepetcare" target="blank">
+                        <img src="/images/facebook-icon.svg" alt="Facebook Icon" class="social-icon" />
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/sequencepetcare" target="blank">
+                        <img src="/images/instagram-icon.svg" alt="Instagram Icon" class="social-icon" />
+                        <span>instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/sequencepetcare" target="blank">
+                        <img src="/images/twitter-icon.svg" alt="Twitter Icon" class="social-icon" />
+                        <span>Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <section class="contact-info">
+            <h2>Get in Touch</h2><br>
+            <p>If you have any questions or need support, feel free to reach out to us.</p>
+            <ul>
+                <li><strong>Address:</strong> Plot 303 Danjuma Drive, Port Harcourt, Nigeria</li>
+                <li><strong>Phone:</strong> +2348064010818</li>
+                <li><strong>Email:</strong> info@sequencepetcare.com</li>
+            </ul>
+            
+
+           
+
+            
+
+        </section>
+         <!-- Contact Form -->
+         <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="/submit-contact-form" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Google Map Embed -->
+        <section class="map">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2258439087353!2d-122.4212467846819!3d37.77902697975724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5d2a0913%3A0x2c5df21d0b1ff51d!2sPetCare%20Store!5e0!3m2!1sen!2sng!4v1698067535805!5m2!1sen!2sng" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+                
+    </main>
+    <footer id="main-footer"></footer>
+
+    <footer>
+        <p>&copy; 2024 Sequence PetCare | All Rights Reserved</p>
+    </footer>
+    <script src="/js/navigation.js" type="module"></script>
+</body>
+</html>

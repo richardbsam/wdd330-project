@@ -23,9 +23,7 @@
   --large-font: 1.2em;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 body {
 
   font-family: var(--font-body);
@@ -347,7 +345,6 @@ h2 {
     max-width: 900px;
     margin: auto;
     border: 2px solid #ddd;
-    box-sizing: border-box;
   }
 
   .mission {
@@ -612,6 +609,9 @@ form {
   background-color: var(--accent-color);
 }
 
+
+
+
 /* Profile Display Section */
 .display-pet-profile {
   margin-top: 40px;
@@ -629,8 +629,9 @@ form {
   border-radius: 10px;
   padding: 20px;
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column; /* Default to column layout */
+  align-items: center; /* Center items in column layout */
+  gap: 20px; /* Space between items */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -641,11 +642,241 @@ form {
 }
 
 .profile-card h3 {
-  font-size: 22px;
+  font-size: 20px;
   color: #4CAF50;
 }
 
 .profile-card p {
   font-size: 16px;
   color: #555;
+}
+
+@media (min-width: 750px) { /* Adjustments for desktop view */
+  .profile-card {
+      flex-direction: row; /* Change to row layout on larger screens */
+      align-items: center; /* Center vertically */
+  }
+
+  .pet-photo {
+      margin-right: 15px; /* Space between image and details */
+  }
+
+  /* Optional: Adjustments for larger screens */
+  .profile-card h3 {
+      font-size: 24px; /* Increase font size for larger screens */
+  }
+
+  .profile-card p {
+      font-size: 18px; /* Increase font size for larger screens */
+  }
+}
+
+
+
+
+
+
+/*ifvgywoifvyg*/
+
+/* Contact Info */
+.contact-info ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info .social-media ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.contact-info .social-media ul li a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 18px;
+}
+
+.contact-info .social-media ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 40px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Google Map Embed */
+.map {
+  margin-top: 40px;
+}
+
+.map-container {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* General styles for the social media section */
+.social-media {
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media h3 {
+  margin-bottom: 10px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  margin: 15px 0; /* Vertical space for each item */
+}
+
+.social-media li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.social-icon {
+  width: 40px; /* Adjust icon size */
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.social-media li span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Mobile View (Default) - Social media icons in a column */
+.social-media ul {
+  display: block;
+}
+
+/* Desktop View - Social media icons in a row */
+@media (min-width: 768px) {
+  .social-media ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 15px; /* Horizontal spacing between icons */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Flexbox styles for checkout form section */
+.checkout__form {
+  display: flex;
+  flex-direction: column; /* Default to column on mobile */
+  gap: 20px; /* Space between fields */
+}
+
+.form__fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column; /* Align inputs vertically */
+}
+
+/* Media Query for Desktop View */
+@media (min-width: 680px) {
+  .checkout__form {
+    flex-direction: row; /* Switch to row on desktop */
+    justify-content: space-between; /* Space out sections */
+  }
+
+  .checkout__form > section {
+    flex: 1; /* Each section takes equal space */
+    margin: 10px; /* Space between sections */
+  }
+
+  .checkout__form .form__fieldset {
+    margin: 0; /* Remove margin for fieldsets */
+  }
+
+  .form__group {
+    flex-direction: row; /* Align inputs horizontally within groups */
+    justify-content: space-between; /* Space out labels and inputs */
+  }
+
+  .form__label {
+    flex-basis: 40%; /* Adjust label width */
+    margin-right: 10px; /* Space between label and input */
+  }
+
+  .form__input {
+    flex: 1; /* Inputs take remaining space */
+  }
 }

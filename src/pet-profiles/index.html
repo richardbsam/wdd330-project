@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SequencePetCare | PetPofiles</title>
+    <title>Profile | SequencePetCare</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -30,8 +30,8 @@
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/pet-profiles/index.html">Pet Profiles</a></li>
-        <li><a href="pet-product.html">Pet Product</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Pet Product</a></li>
+        <li><a href="/contact/index.html">Contact Us</a></li>
       </ul>
     </nav> 
 
@@ -40,7 +40,7 @@
         <p>Manage your pet's information and health records</p>
         <!-- Pet Profile Form -->
         <section class="pet-profile-form">
-            <h2>Create or Update Pet Profile</h2>
+            <h2>Create or Update Pet Profile</h2><br>
             <form action="/submit-pet-profile" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="pet-name">Pet's Name:</label>
@@ -82,14 +82,25 @@
         <section class="display-pet-profile">
             <h2>Your Pet's Profile</h2>
             <div class="profile-card">
-                <img src="pet-photo.jpg" alt="Pet Photo" class="pet-photo">
+                <img src="/images/pet-photo.jpg" alt="Pet Photo" class="pet-photo">
                 <h3>Pet's Name: Fluffy</h3>
                 <p><strong>Breed:</strong> Golden Retriever</p>
                 <p><strong>Age:</strong> 4 years</p>
                 <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
                 <p><strong>Medical Treatments:</strong> None</p>
             </div>
+
+            <div class="profile-card">
+                <img src="/images/pet-photo12.jpg" alt="Pet Photo" class="pet-photo">
+                <h3>Pet's Name: Stud</h3>
+                <p><strong>Breed:</strong> Newzealand</p>
+                <p><strong>Age:</strong> 2 years</p>
+                <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
+                <p><strong>Medical Treatments:</strong> None</p>
+            </div>
         </section>
+
+      
     </main>
     <footer id="main-footer"></footer>
 
