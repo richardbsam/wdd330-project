@@ -5,29 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | SequencePetCare</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="js/main.js" type="module"></script>
+    <script src="../js/product-listing.js" type="module"></script>
   </head>
 
-  
   <body>
     <header class="divider" id="main-header">
       <!-- Navigation Section --> 
-
       <button class="nav-toggle">☰</button> <!-- Hamburger button --> 
-      
     </header>
     
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/index.html" class="active">Home</a></li>
         <li><a href="/pet-profiles/index.html">Pet Profiles</a></li>
-        <li><a href="#">Pet Product</a></li>
+        <li><a href="/pet-products/index.html">Pet Products</a></li>
         <li><a href="/contact/index.html">Contact Us</a></li>
       </ul>
     </nav>  
-
 
     <main class="divider">
       <div class="hero">
@@ -36,72 +31,59 @@
           alt="image of a high mountain lake"/>
         <div class="cta-button">
           <a href="/product-listing/index.html">
-          <button onclick="handleButtonClick()">Shop Now</button>
+            <button onclick="handleButtonClick()">Shop Now</button>
           </a>
         </div>
       </div>
 
       <section class="mission">
-
-        <p>Our mission is to provide compassionate, reliable, and comprehensive care for pets, 
-          ensuring their health, happiness, and well-being while offering peace of mind to pet owners 
-          through our products, personalized services and expert advice.</p>
-
+        <p>At PetCare, we are dedicated to enhancing the lives of pets by offering a wide range of high-quality products designed for their health, comfort, and happiness. From nutritious food and health supplements to grooming essentials and fun toys, our carefully curated selection ensures that every pet receives the best care. We are committed to supporting pet owners with reliable products, expert advice, and personalized services that provide peace of mind and help pets thrive in every stage of life.</p>
       </section>
+
       <section class="products">
         <h2>Available Products<span class="title"></span></h2>
-        <!-- Add the Categories Section here -->
         <section class="categories">
           <div class="category">
-            <a
-              href="product-listing/index.html?category=tents"
-              class="category-link"
-              ><img src="/images/toys.svg" alt="Avialable Product Feeder" />
+            <a href="product-listing/index.html?category=tents" class="category-link">
+              <img src="/images/toys.svg" alt="Available Product Feeder" />
               <h3>Toys and Accessories</h3>
             </a>
           </div>
           <div class="category">
-            <a
-              href="product-listing/index.html?category=backpacks"
-              class="category-link"
-              ><img src="/images/foods.svg" alt="Avialable Product Feeder" />
+            <a href="product-listing/index.html?category=backpacks" class="category-link">
+              <img src="/images/foods.svg" alt="Available Product Feeder" />
               <h3>Food and Nutrition</h3>
             </a>
           </div>
           <div class="category">
             <a href="product-listing/index.html?category=sleeping-bags" class="category-link">
-              <img src="/images/suppliments.svg" alt="Avialable Product Feeder" />
-              <h3>Health Suppliments</h3>
+              <img src="/images/suppliments.svg" alt="Available Product Feeder" />
+              <h3>Health Supplements</h3>
             </a>
           </div>
-
           <div class="category">
             <a href="product-listing/index.html?category=hammocks" class="category-link">
-              <img src="/images/beds.svg" alt="Avialable Product Feeder"/>
+              <img src="/images/beds.svg" alt="Available Product Feeder"/>
               <h3>Apparel and Beds</h3>
             </a>
           </div>
-
           <div class="category">
             <a href="product-listing/index.html?category=hammocks" class="category-link">
-              <img src="/images/collars.svg" alt="Avialable Product Feeder"/>
+              <img src="/images/collars.svg" alt="Available Product Feeder"/>
               <h3>Leashes and Collars</h3>
             </a>
           </div>
-
           <div class="category">
             <a href="product-listing/index.html?category=hammocks" class="category-link">
-              <img src="/images/groomings.svg" alt="Avialable Product Feeder"/>
+              <img src="/images/groomings.svg" alt="Available Product Feeder"/>
               <h3>Grooming Kits</h3>
             </a>
           </div>    
-
-
         </section>
-        <!-- End of Categories Section -->
         <section id="newsletter-container"></section>
       </section>
     </main>
+
     <footer id="main-footer"></footer>
     <script src="/js/newsletter.js" type="module"></script>
     <script src="/js/navigation.js" type="module"></script>
