@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | SequencePetCare</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="../js/product-listing.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="divider" id="main-header">
+        <!-- Navigation Section --> 
+  
+        <button class="nav-toggle">☰</button> <!-- Hamburger button --> 
+        
+      </header>
+    
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pet-profiles.html">Pet Profiles</a></li>
+        <li><a href="#">Pet Product</a></li>
+        <li><a href="/contact/index.html">Contact Us</a></li>
+      </ul>
+    </nav> 
+
+    <main>
+        <h1>Pet Profile</h1>
+        <p>Manage your pet's information and health records</p>
+        <!-- Pet Profile Form -->
+        <section class="pet-profile-form">
+            <h2>Create or Update Pet Profile</h2><br>
+            <form action="/submit-pet-profile" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="pet-name">Pet's Name:</label>
+                    <input type="text" id="pet-name" name="pet_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-breed">Breed:</label>
+                    <input type="text" id="pet-breed" name="pet_breed" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-age">Age:</label>
+                    <input type="number" id="pet-age" name="pet_age" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="vaccination-records">Vaccination Records:</label>
+                    <textarea id="vaccination-records" name="vaccination_records" rows="4" placeholder="List any vaccinations here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="medical-treatments">Medical Treatments:</label>
+                    <textarea id="medical-treatments" name="medical_treatments" rows="4" placeholder="Describe any medical treatments your pet has received..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-photos">Upload Photos:</label>
+                    <input type="file" id="pet-photos" name="pet_photos[]" accept="image/*" multiple>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Save Profile</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Display Pet Profile -->
+        <section class="display-pet-profile">
+            <h2>Your Pet's Profile</h2>
+            <div class="profile-card">
+                <img src="/images/pet-photo.jpg" alt="Pet Photo" class="pet-photo">
+                <h3>Pet's Name: Fluffy</h3>
+                <p><strong>Breed:</strong> Golden Retriever</p>
+                <p><strong>Age:</strong> 4 years</p>
+                <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
+                <p><strong>Medical Treatments:</strong> None</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="/images/pet-photo12.jpg" alt="Pet Photo" class="pet-photo">
+                <h3>Pet's Name: Stud</h3>
+                <p><strong>Breed:</strong> Newzealand</p>
+                <p><strong>Age:</strong> 2 years</p>
+                <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
+                <p><strong>Medical Treatments:</strong> None</p>
+            </div>
+        </section>
+        
+    </main>
+    <footer id="main-footer"></footer>
+
+    <footer>
+        <p>&copy; 2024 Sequence PetCare | All Rights Reserved</p>
+    </footer>
+    <script src="/js/navigation.js" type="module"></script>
+</body>
+</html>
