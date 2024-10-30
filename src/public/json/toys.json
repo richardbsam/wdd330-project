@@ -1,0 +1,19 @@
+{
+  "category": "Toys and Accessories",
+  "items": [
+    {
+      "id": 1,
+      "name": "Rubber Ball",
+      "image": "../images/rubber-ball.jpg",
+      "price": "$5.99",
+      "description": "A durable rubber ball for active pets."
+    },
+    {
+      "id": 2,
+      "name": "Chew Toy",
+      "image": "../images/chew-toy.jpg",
+      "price": "$8.99",
+      "description": "A fun chew toy for dogs."
+    }
+  ]
+}

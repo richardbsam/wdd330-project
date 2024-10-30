@@ -214,6 +214,78 @@ h2 {
   color: var(--primary-color); /* Soft blue links */
 }
 
+
+
+
+/*fdljfj*/
+/* Product Card Styles */
+.product-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #4cae4c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Styles for product lists */
 .product-card {
   flex: 1 1 45%;
@@ -285,6 +357,10 @@ h2 {
   grid-row: 2;
   grid-column: 3;
 }
+
+
+
+
 
 
 

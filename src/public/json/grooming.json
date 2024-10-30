@@ -1,0 +1,19 @@
+{
+  "category": "Grooming Kits",
+  "items": [
+    {
+      "id": 1,
+      "name": "Premium Dog Food",
+      "image": "../images/dog-food.jpg",
+      "price": "$29.99",
+      "description": "Nutritious food for healthy pets."
+    },
+    {
+      "id": 2,
+      "name": "Organic Cat Food",
+      "image": "../images/cat-food.jpg",
+      "price": "$24.99",
+      "description": "Organic food for cats."
+    }
+  ]
+}
