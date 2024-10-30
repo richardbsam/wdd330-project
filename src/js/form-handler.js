@@ -44,3 +44,28 @@ function showFlashMessage(message, type) {
 }
 
 
+
+
+
+
+// form-handler.js
+
+export function handleFormSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Show flash message
+    const flashMessage = document.getElementById("flash-message");
+    flashMessage.textContent = "Your message has been sent successfully! We will get back to you soon.";
+    flashMessage.classList.remove("hidden");
+    
+    // Optionally, reset the form fields
+    document.getElementById("contact-form").reset();
+    
+    // Simulate form submission (for demonstration purposes)
+    // In a real application, you would send the form data to the server here
+    setTimeout(() => {
+        flashMessage.classList.add("hidden"); // Hide message after 5 seconds
+    }, 5000);
+
+    return false; // Prevent default form submission
+}
