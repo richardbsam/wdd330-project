@@ -14,7 +14,7 @@ export default defineConfig({
         product: resolve(__dirname, "src/pet-products/index.html"),
         productListing: resolve(__dirname, "src/product-listing/index.html"),
         checkout: resolve(__dirname, "src/checkout/index.html"),
-        checkout: resolve(__dirname, "src/pet-profiles/index.html"),
+        profile: resolve(__dirname, "src/pet-profiles/index.html"),
         contact: resolve(__dirname, "src/contact/index.html"),
       },
     },
