@@ -11,115 +11,94 @@
     <!-- Header Section -->
     <header class="divider header" id="main-header"></header>
 
-    <!-- Main Section -->
     <main class="divider checkout container">
       <h2 class="checkout__title">Review & Place your Order</h2>
-
+    
       <!-- Checkout Form Section -->
       <section class="checkout__form">
         <form name="checkout" class="form">
           <!-- Shipping Information -->
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Shipping</legend>
-
-            <div class="form__group checkout__name">
+            <legend class="form__legend">Shipping Information</legend>
+    
+            <div class="form__group">
               <label for="fname" class="form__label">First Name</label>
               <input id="fname" name="fname" class="form__input" required />
-
+    
               <label for="lname" class="form__label">Last Name</label>
               <input id="lname" name="lname" class="form__input" required />
             </div>
-
-            <div class="form__group checkout__address">
+    
+            <div class="form__group">
               <label for="street" class="form__label">Street</label>
               <input id="street" name="street" class="form__input" required />
-
+    
               <label for="city" class="form__label">City</label>
               <input id="city" name="city" class="form__input" required />
-
+            </div>
+    
+            <div class="form__group">
               <label for="state" class="form__label">State</label>
               <input id="state" name="state" class="form__input" required />
-
-              <label for="zip" class="form__label">Zip</label>
-              <input id="zip" name="zip" id="zip" class="form__input" required />
+    
+              <label for="zip" class="form__label">Zip Code</label>
+              <input id="zip" name="zip" class="form__input" required />
             </div>
           </fieldset>
-
+    
           <!-- Payment Information -->
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Payment</legend>
-
-            <label for="cardNumber" class="form__label">Card Number</label>
-            <input
-              name="cardNumber"
-              class="form__input"
-              pattern="\d{16}"
-              placeholder="1234 1234 1234 1234"
-              required
-            />
-            <label for="expiration" class="form__label">Expiration</label>
-            
-            <input
-              name="expiration"
-              class="form__input"
-              placeholder="mm/yyyy"
-              required
-            />
-
-            <label for="code" class="form__label">CVV</label>
-            <input
-              name="code"
-              class="form__input"
-              pattern="\d{3}"
-              placeholder="123"
-              required
-            />
+            <legend class="form__legend">Payment Information</legend>
+    
+            <div class="form__group">
+              <label for="cardNumber" class="form__label">Card Number</label>
+              <input
+                name="cardNumber"
+                class="form__input"
+                pattern="\d{16}"
+                placeholder="1234 1234 1234 1234"
+                required
+              />
+            </div>
+    
+            <div class="form__group">
+              <label for="expiration" class="form__label">Expiration Date</label>
+              <input name="expiration" class="form__input" placeholder="MM/YY" required />
+            </div>
+    
+            <div class="form__group">
+              <label for="code" class="form__label">CVV</label>
+              <input name="code" class="form__input" pattern="\d{3}" placeholder="123" required />
+            </div>
           </fieldset>
-
+    
           <!-- Order Summary -->
-          <fieldset class="form__fieldset checkout-summary">
+          <fieldset class="form__fieldset">
             <legend class="form__legend">Order Summary</legend>
             <ul class="order-summary__list">
               <li class="order-summary__item">
-                <label for="cartTotal" class="form__label">
-                  Item Subtotal <span id="num-items"></span>
-                </label>
-                <p
-                  name="cartTotal"
-                  id="cartTotal"
-                  class="order-summary__value"
-                ></p>
+                <span>Item Subtotal:</span> <span id="num-items"></span>
               </li>
               <li class="order-summary__item">
-                <label for="shipping" class="form__label"
-                  >Shipping Estimate</label
-                >
-                <p id="shipping" class="order-summary__value"></p>
+                <span>Shipping Estimate:</span> <span id="shipping"></span>
               </li>
               <li class="order-summary__item">
-                <label for="tax" class="form__label">Tax</label>
-                <p id="tax" class="order-summary__value"></p>
+                <span>Tax:</span> <span id="tax"></span>
               </li>
               <li class="order-summary__item">
-                <label for="orderTotal" class="form__label"
-                  ><b>Order Total</b></label
-                >
-                <p id="orderTotal" class="order-summary__value"></p>
+                <b>Order Total:</b> <span id="orderTotal"></span>
               </li>
             </ul>
           </fieldset>
-
+    
           <!-- Submit Button -->
-          <button
-            id="checkoutSubmit"
-            type="submit"
-            class="button button--primary"
-          >
+          <button id="checkoutSubmit" type="submit" class="button button--primary">
             Checkout
           </button>
         </form>
       </section>
     </main>
+    
 
     <!-- Footer Section -->
     <footer class="footer" id="main-footer"></footer>
