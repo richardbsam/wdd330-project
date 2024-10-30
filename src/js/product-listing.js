@@ -3,6 +3,8 @@ import ProductData from "./ExternalServices.mjs";
 import ProductList from "./ProductList.mjs";
 import { loadHeaderFooter, getParam } from "./utils.mjs";
 
+
+
 // Load the header and footer dynamically
 loadHeaderFooter();
 
@@ -20,3 +22,8 @@ const myList = new ProductList(category, dataSource, listElement);
 
 // Call the init method to render the product list
 myList.init();
+
+
+
+
+

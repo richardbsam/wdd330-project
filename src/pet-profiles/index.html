@@ -1,38 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet-Profile | SequencePetCare</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="../js/product-listing.js" type="module"></script>
-  </head>
+    <script src="../js/product-listing.js" type="module" defer></script>
+    <script src="../js/form-handler.js" type="module" defer></script> <!-- Add a new script for handling form submission -->
+</head>
 
-  <body>
+<body>
     <header class="divider" id="main-header">
         <!-- Navigation Section --> 
-  
         <button class="nav-toggle">☰</button> <!-- Hamburger button --> 
-        
-      </header>
+    </header>
     
     <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pet-profiles/index.html">Pet Profiles</a></li>
-        <li><a href="/pet-products/index.html">Pet Product</a></li>
-        <li><a href="/contact/index.html">Contact Us</a></li>
-      </ul>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pet-profiles/index.html">Pet Profiles</a></li>
+            <li><a href="/pet-products/index.html">Pet Product</a></li>
+            <li><a href="/contact/index.html">Contact Us</a></li>
+        </ul>
     </nav> 
 
     <main>
         <h1>Pet Profile</h1>
         <p>Manage your pet's information and health records</p>
+        
         <!-- Pet Profile Form -->
         <section class="pet-profile-form">
             <h2>Create or Update Pet Profile</h2><br>
-            <form action="/submit-pet-profile" method="POST" enctype="multipart/form-data">
+            <form id="pet-profile-form" action="/submit-pet-profile" method="POST" enctype="multipart/form-data">
+      
                 <div class="form-group">
                     <label for="pet-name">Pet's Name:</label>
                     <input type="text" id="pet-name" name="pet_name" required>
@@ -72,27 +73,56 @@
         <!-- Display Pet Profile -->
         <section class="display-pet-profile">
             <h2>Your Pet's Profile</h2>
+        
             <div class="profile-card">
-                <img src="/images/pet-photo.jpg" alt="Pet Photo" class="pet-photo">
+                <img src="/images/pet-photo.jpg" alt="Pet Photo" class="pet-photo" onclick="toggleDetails('pet1')">
                 <h3>Pet's Name: Fluffy</h3>
-                <p><strong>Breed:</strong> Golden Retriever</p>
-                <p><strong>Age:</strong> 4 years</p>
-                <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
-                <p><strong>Medical Treatments:</strong> None</p>
+                <div class="pet-details" id="pet1" class="hidden">
+                    <p><strong>Breed:</strong> Golden Retriever</p>
+                    <p><strong>Age:</strong> 4 years</p>
+                    <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
+                    <p><strong>Medical Treatments:</strong> None</p>
+                </div>
             </div>
 
             <div class="profile-card">
-                <img src="/images/pet-photo12.jpg" alt="Pet Photo" class="pet-photo">
+                <img src="/images/pet-photo11.jpg" alt="Pet Photo" class="pet-photo" onclick="toggleDetails('pet3')">
+                <h3>Pet's Name: Deadly Ginger</h3>
+                <div class="pet-details" id="pet3" class="hidden">
+                    <p><strong>Breed:</strong> Border Collie</p>
+                    <p><strong>Age:</strong> 2.5 years</p>
+                    <p><strong>Vaccination Records:</strong> Rabies (2024), Distemper (2023)</p>
+                    <p><strong>Medical Treatments:</strong> None</p>
+                </div>
+            </div>
+        
+            <div class="profile-card">
+                <img src="/images/pet-photo12.jpg" alt="Pet Photo" class="pet-photo" onclick="toggleDetails('pet2')">
                 <h3>Pet's Name: Stud</h3>
-                <p><strong>Breed:</strong> Newzealand</p>
-                <p><strong>Age:</strong> 2 years</p>
-                <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
-                <p><strong>Medical Treatments:</strong> None</p>
+                <div class="pet-details" id="pet2" class="hidden">
+                    <p><strong>Breed:</strong> New Zealand</p>
+                    <p><strong>Age:</strong> 2 years</p>
+                    <p><strong>Vaccination Records:</strong> Rabies (2023), Distemper (2023)</p>
+                    <p><strong>Medical Treatments:</strong> None</p>
+                </div>
             </div>
         </section>
         
+        
+        
     </main>
     <footer id="main-footer"></footer>
-    <script src="/js/navigation.js" type="module"></script>
+    <script src="/js/navigation.js" type="module" defer></script>
+    
+    <script>// Function to toggle pet details
+        function toggleDetails(petId) {
+            const petDetails = document.getElementById(petId);
+            if (petDetails.style.display === "none" || petDetails.style.display === "") {
+                petDetails.style.display = "block"; // Show pet details
+            } else {
+                petDetails.style.display = "none"; // Hide pet details
+            }
+        }
+        </script>
 </body>
 </html>

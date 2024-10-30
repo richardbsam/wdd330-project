@@ -882,3 +882,58 @@ form {
     flex: 1; /* Inputs take remaining space */
   }
 }
+
+/* Flash message styles */
+.flash-message {
+  position: fixed;
+  top: 20px; /* Distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the element */
+  padding: 15px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  width: auto; /* Adjust width as needed */
+  max-width: 90%; /* Set a max width for smaller screens */
+  text-align: center; /* Center text inside the message */
+}
+
+/* Success message style */
+.flash-message.success {
+  background-color: #28a745; /* Green background for success */
+  color: white;
+}
+
+/* Error message style */
+.flash-message.error {
+  background-color: rgb(138, 0, 0); /* Red background for error */
+  color: white;
+}
+
+
+
+/* CSS for pet image hover effect */
+.pet-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  cursor: pointer; /* Changes cursor to pointer to indicate clickable image */
+}
+
+.pet-photo:hover {
+  transform: scale(1.05); /* Scale up the image slightly */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+
+
+
+.flash-message {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 15px; /* Some padding */
+  margin: 15px 0; /* Margin for spacing */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.hidden {
+  display: none; /* Hide the element */
+}
