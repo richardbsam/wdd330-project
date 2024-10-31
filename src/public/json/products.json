@@ -7,6 +7,7 @@
     "price": "$10.99",
     "description": "High-quality toys and accessories for pets.",
     "link": "../json/toys.json"
+    
   },
   {
     "id": 2,
