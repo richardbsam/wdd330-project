@@ -254,7 +254,7 @@ h2 {
 }
 
 .add-to-cart {
-  background-color: #5cb85c;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px;
   border: none;
@@ -263,7 +263,7 @@ h2 {
 }
 
 .add-to-cart:hover {
-  background-color: #4cae4c;
+  background-color: var(--accent-color);
 }
 
 /* Styles for product lists */
