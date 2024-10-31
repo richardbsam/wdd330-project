@@ -4,7 +4,6 @@
     "name": "Toys and Accessories",
     "category": "toys",
     "image": "../images/toys.svg",
-    "price": "$10.99",
     "description": "High-quality toys and accessories for pets.",
     "link": "../json/toys.json"
     
@@ -14,8 +13,7 @@
     "name": "Food and Nutrition",
     "category": "foods",
     "image": "../images/foods.svg",
-    "price": "$20.99",
-    "description": "Nutritious food for pets.",
+    "description": "Nutritious food for all your pets.",
     "link": "../json/foods.json"
   },
   {
@@ -23,7 +21,6 @@
     "name": "Health Supplements",
     "category": "supplements",
     "image": "../images/suppliments.svg",
-    "price": "$15.99",
     "description": "Health supplements to keep your pets healthy.",
     "link": "../json/supplements.json"
   },
@@ -32,7 +29,6 @@
     "name": "Apparel and Beds",
     "category": "beds",
     "image": "../images/beds.svg",
-    "price": "$30.99",
     "description": "Comfortable apparel and beds for your pets.",
     "link": "../json/beds.json"
   },
@@ -41,7 +37,6 @@
     "name": "Leashes and Collars",
     "category": "leashes",
     "image": "../images/collars.svg",
-    "price": "$12.99",
     "description": "Stylish leashes and collars for pets.",
     "link": "../json/leashes.json"
   },
@@ -50,7 +45,6 @@
     "name": "Grooming Kits",
     "category": "grooming",
     "image": "../images/groomings.svg",
-    "price": "$18.99",
     "description": "Complete grooming kits for pets.",
     "link": "../json/grooming.json"
   }

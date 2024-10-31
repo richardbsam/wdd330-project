@@ -52,12 +52,10 @@ function displayProducts(products) {
   products.forEach(product => {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
-
     productCard.innerHTML = `
       <img src="${product.image}" alt="${product.name}" class="product-image" />
       <h3>${product.name}</h3>
       <p>${product.description}</p>
-      <p class="product-price">${product.price}</p>
       <button class="view-details" data-link="${product.link}">View Products</button>
     `;
 
