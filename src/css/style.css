@@ -867,8 +867,8 @@ form {
 }
 
 .social-icon {
-  width: 40px; /* Adjust icon size */
-  height: 40px;
+  width: 30px; /* Adjust icon size */
+  height: 30px;
   margin-bottom: 5px;
 }
 
@@ -880,10 +880,11 @@ form {
 }
 
 /* Mobile View (Default) - Social media icons in a column */
-.social-media ul {
-  display: block;
-}
+  .social-media ul {
+    display: flex;
+    justify-content: center;
 
+  }
 /* Desktop View - Social media icons in a row */
 @media (min-width: 768px) {
   .social-media ul {
@@ -894,6 +895,13 @@ form {
   .social-media li {
     margin: 0 15px; /* Horizontal spacing between icons */
   }
+  .social-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  
 }
 
 
