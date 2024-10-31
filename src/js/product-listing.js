@@ -24,105 +24,51 @@ myList.init();
 
 
 
+// Function to fetch pet food product data from Open Pet Food Facts API
+async function fetchPetFoodProduct() {
+  const apiUrl = 'https://world.openpetfoodfacts.org/api/v0/product/20106836.json';
 
-
-// src/js/product-listing.js
-
-// Fetch products from the main JSON file
-async function fetchProducts() {
   try {
-    const response = await fetch('https://world.openpetfoodfacts.org/api/v0/product/20106836.json');
-    const products = await response.json();
-    displayProducts(products);
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
+    const productData = await response.json();
+    displayProductData(productData.product);
   } catch (error) {
-    console.error("Error fetching products:", error);
+    console.error('Error fetching product data:', error);
+    document.getElementById('product-details').textContent = 'Failed to load product details.';
   }
 }
 
-// Function to display the products on the page
-function displayProducts(products) {
-  const productList = document.getElementById('product-list');
+// Function to display product details on the webpage
+function displayProductData(product) {
+  const productDetailsContainer = document.getElementById('product-details');
 
-  products.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.classList.add('product-card');
-    productCard.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <h3>${product.name}</h3>
-      <p>${product.description}</p>
-      <button class="view-details" data-link="${product.link}">View Products</button>
-    `;
+  // Clear any existing content
+  productDetailsContainer.innerHTML = '';
 
-    productList.appendChild(productCard);
-  });
+  // Create HTML content with product data
+  const productContent = `
+    <div class="product-card">
+      <img src="${product.image_url || ''}" alt="${product.product_name || 'Product Image'}" class="product-image" />
+      <h2>${product.product_name || 'No Product Name Available'}</h2>
+      <p><strong>Brand:</strong> ${product.brands || 'No Brand Available'}</p>
+      <p><strong>Ingredients:</strong> ${product.ingredients_text || 'No Ingredients Available'}</p>
+      <p><strong>Categories:</strong> ${product.categories || 'No Categories Available'}</p>
+      <p><strong>Quantity:</strong> ${product.quantity || 'No Quantity Available'}</p>
+      <p><strong>Origin:</strong> ${product.countries_tags?.join(', ') || 'No Origin Information Available'}</p>
+      <p><strong>Nutriscore:</strong> ${product.nutrition_grades || 'Not Rated'}</p>
+    </div>
+  `;
 
-  // Add event listeners to buttons
-  const viewButtons = document.querySelectorAll('.view-details');
-  viewButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const productLink = this.getAttribute('data-link');
-      fetchProductDetails(productLink);
-    });
-  });
+  // Insert content into the container
+  productDetailsContainer.innerHTML = productContent;
 }
 
-// Fetch details of a specific product category from its JSON file
-async function fetchProductDetails(link) {
-  try {
-    const response = await fetch(link);
-    const productDetails = await response.json();
+// Initialize fetching the product data when the page loads
+document.addEventListener('DOMContentLoaded', fetchPetFoodProduct);
 
-    // Display the category name as the heading
-    const categoryHeading = document.getElementById('category-heading');
-    categoryHeading.textContent = productDetails.category;
 
-    displayProductDetails(productDetails);
-  } catch (error) {
-    console.error("Error fetching product details:", error);
-  }
-}
 
-// Function to display product details and add "Add to Cart" button
-function displayProductDetails(details) {
-  const productList = document.getElementById('product-list');
-  productList.innerHTML = ''; // Clear previous products
 
-  details.items.forEach(item => {
-    const productCard = document.createElement('div');
-    productCard.classList.add('product-card');
-
-    productCard.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" class="product-image" />
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <p class="product-price">${item.price}</p>
-      <button class="add-to-cart" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}">Add to Cart</button>
-    `;
-
-    productList.appendChild(productCard);
-  });
-
-  // Add event listeners to "Add to Cart" buttons
-  const addToCartButtons = document.querySelectorAll('.add-to-cart');
-  addToCartButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const productId = this.getAttribute('data-id');
-      const productName = this.getAttribute('data-name');
-      const productPrice = this.getAttribute('data-price');
-      addToCart({ id: productId, name: productName, price: productPrice });
-    });
-  });
-}
-
-// Function to handle adding products to the cart
-function addToCart(product) {
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
-  
-  cart.push(product);
-  localStorage.setItem('cart', JSON.stringify(cart));
-  
-  alert(`${product.name} has been added to your cart.`);
-}
-
-// Initialize fetching the products when the page loads
-document.addEventListener('DOMContentLoaded', fetchProducts);
