@@ -31,7 +31,6 @@ myList.init();
 
 
 
-
 // src/js/product-listing.js
 
 // Fetch products from the main JSON file
@@ -77,6 +76,11 @@ async function fetchProductDetails(link) {
   try {
     const response = await fetch(link);
     const productDetails = await response.json();
+
+    // Display the category name as the heading
+    const categoryHeading = document.getElementById('category-heading');
+    categoryHeading.textContent = productDetails.category;
+
     displayProductDetails(productDetails);
   } catch (error) {
     console.error("Error fetching product details:", error);
