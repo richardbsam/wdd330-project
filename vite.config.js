@@ -4,8 +4,6 @@ import { defineConfig } from "vite";
 export default defineConfig({
   root: "src/",
 
-   // Define a public directory for static assets like JSON files
-   publicDir: "../public",
 
   //Modify your vite to reflect the changes in your project structure:
   build: {
