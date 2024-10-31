@@ -3,8 +3,12 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "src/",
+  
 
+    // Set publicDir to point to src/public, which will contain JSON, images, and partials
+    publicDir: "public",
 
+    
   //Modify your vite to reflect the changes in your project structure:
   build: {
     outDir: "../dist",
@@ -17,6 +21,7 @@ export default defineConfig({
         checkout: resolve(__dirname, "src/checkout/index.html"),
         profile: resolve(__dirname, "src/pet-profiles/index.html"),
         contact: resolve(__dirname, "src/contact/index.html"),
+        public: resolve(__dirname, "src/public/json.html"),
       },
     },
   },

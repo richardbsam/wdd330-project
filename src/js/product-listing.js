@@ -31,7 +31,7 @@ myList.init();
 // Fetch products from the main JSON file
 async function fetchProducts() {
   try {
-    const response = await fetch('../public/json/products.json');
+    const response = await fetch('/json/products.json');
     const products = await response.json();
     displayProducts(products);
   } catch (error) {
