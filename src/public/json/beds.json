@@ -1,20 +1,61 @@
 {
-  "category": "Apparels and Beds",
+  "category": "Apparel and Beds",
   "items": [
     {
       "id": 1,
-      "name": "Premium Dog Food",
-      "image": "../images/dog-food.jpg",
-      "price": "$29.99",
-      "description": "Nutritious food for healthy pets."
+      "name": "Cozy Dog Sweater",
+      "image": "../images/dog-sweater.jpg",
+      "price": "$18.99",
+      "description": "Comfortable sweater for dogs."
     },
     {
       "id": 2,
-      "name": "Organic Cat Food",
-      "image": "../images/cat-food.jpg",
-      "price": "$24.99",
-      "description": "Organic food for cats."
+      "name": "Waterproof Dog Boots",
+      "image": "../images/dog-boots.jpg",
+      "price": "$12.99",
+      "description": "Protects paws in wet and cold weather."
+    },
+    {
+      "id": 3,
+      "name": "Orthopedic Pet Bed",
+      "image": "../images/ortho-bed.jpg",
+      "price": "$45.99",
+      "description": "Orthopedic bed for extra comfort."
+    },
+    {
+      "id": 4,
+      "name": "Cat Blanket",
+      "image": "../images/cat-blanket.jpg",
+      "price": "$9.99",
+      "description": "Soft, cozy blanket for cats."
+    },
+    {
+      "id": 5,
+      "name": "Raincoat for Dogs",
+      "image": "../images/raincoat.jpg",
+      "price": "$14.99",
+      "description": "Waterproof raincoat to keep pets dry."
+    },
+    {
+      "id": 6,
+      "name": "Fluffy Pet Bed",
+      "image": "../images/fluffy-bed.jpg",
+      "price": "$29.99",
+      "description": "Fluffy bed for ultimate pet relaxation."
+    },
+    {
+      "id": 7,
+      "name": "Cooling Vest",
+      "image": "../images/cooling-vest.jpg",
+      "price": "$20.99",
+      "description": "Keeps pets cool in hot weather."
+    },
+    {
+      "id": 8,
+      "name": "Pet Pajamas",
+      "image": "../images/pet-pajamas.jpg",
+      "price": "$15.99",
+      "description": "Cute pajamas for cozy nights."
     }
-    
   ]
 }

@@ -3,17 +3,59 @@
   "items": [
     {
       "id": 1,
-      "name": "Premium Dog Food",
-      "image": "../images/dog-food.jpg",
-      "price": "$29.99",
-      "description": "Nutritious food for healthy pets."
+      "name": "Nail Clippers",
+      "image": "../images/nail-clippers.jpg",
+      "price": "$7.99",
+      "description": "Safe nail clippers for pets."
     },
     {
       "id": 2,
-      "name": "Organic Cat Food",
-      "image": "../images/cat-food.jpg",
-      "price": "$24.99",
-      "description": "Organic food for cats."
+      "name": "Pet Shampoo",
+      "image": "../images/pet-shampoo.jpg",
+      "price": "$5.99",
+      "description": "Gentle shampoo for pets."
+    },
+    {
+      "id": 3,
+      "name": "Brush and Comb Set",
+      "image": "../images/brush-comb.jpg",
+      "price": "$12.99",
+      "description": "Set for detangling and grooming."
+    },
+    {
+      "id": 4,
+      "name": "Dental Kit",
+      "image": "../images/dental-kit.jpg",
+      "price": "$6.99",
+      "description": "Toothbrush and toothpaste for pets."
+    },
+    {
+      "id": 5,
+      "name": "Flea Comb",
+      "image": "../images/flea-comb.jpg",
+      "price": "$4.99",
+      "description": "Comb for removing fleas."
+    },
+    {
+      "id": 6,
+      "name": "Ear Cleaner",
+      "image": "../images/ear-cleaner.jpg",
+      "price": "$8.99",
+      "description": "Ear cleaning solution for pets."
+    },
+    {
+      "id": 7,
+      "name": "Pet Deodorant",
+      "image": "../images/pet-deodorant.jpg",
+      "price": "$6.99",
+      "description": "Keeps pets smelling fresh."
+    },
+    {
+      "id": 8,
+      "name": "Slicker Brush",
+      "image": "../images/slicker-brush.jpg",
+      "price": "$9.99",
+      "description": "Slicker brush for shedding control."
     }
   ]
 }

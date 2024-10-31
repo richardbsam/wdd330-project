@@ -3,17 +3,25 @@
   "items": [
     {
       "id": 1,
-      "name": "Premium Dog Food",
-      "image": "../images/dog-food.jpg",
-      "price": "$29.99",
-      "description": "Nutritious food for healthy pets."
+      "name": "Leather Collar",
+      "image": "../images/leather-collar.jpg",
+      "price": "$12.99",
+      "description": "Durable leather collar for dogs."
     },
     {
       "id": 2,
-      "name": "Organic Cat Food",
-      "image": "../images/cat-food.jpg",
-      "price": "$24.99",
-      "description": "Organic food for cats."
+      "name": "Retractable Leash",
+      "image": "../images/retractable-leash.jpg",
+      "price": "$15.99",
+      "description": "Convenient retractable leash."
+    },
+    {
+      "id": 3,
+      "name": "Reflective Collar",
+      "image": "../images/reflective-collar",
+      "price": "$15.99",
+      "description": "Convenient retractable leash."
     }
-  ]
+]
 }
+

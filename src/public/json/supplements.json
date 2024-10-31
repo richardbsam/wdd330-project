@@ -1,0 +1,61 @@
+{
+  "category": "Health Supplements",
+  "items": [
+    {
+      "id": 1,
+      "name": "Joint Support",
+      "image": "../images/joint-support.jpg",
+      "price": "$12.99",
+      "description": "Supplement for joint health and mobility."
+    },
+    {
+      "id": 2,
+      "name": "Skin & Coat Supplement",
+      "image": "../images/skin-coat.jpg",
+      "price": "$10.99",
+      "description": "Enhances skin and coat health."
+    },
+    {
+      "id": 3,
+      "name": "Immune Booster",
+      "image": "../images/immune-booster.jpg",
+      "price": "$15.99",
+      "description": "Helps strengthen your pet's immune system."
+    },
+    {
+      "id": 4,
+      "name": "Probiotic Chews",
+      "image": "../images/probiotic-chews.jpg",
+      "price": "$9.99",
+      "description": "Supports digestive health."
+    },
+    {
+      "id": 5,
+      "name": "Calming Supplement",
+      "image": "../images/calming-supplement.jpg",
+      "price": "$11.99",
+      "description": "Promotes calm behavior during stressful situations."
+    },
+    {
+      "id": 6,
+      "name": "Multivitamin",
+      "image": "../images/multivitamin.jpg",
+      "price": "$13.99",
+      "description": "Daily multivitamin for overall wellness."
+    },
+    {
+      "id": 7,
+      "name": "Hip & Joint Chews",
+      "image": "../images/hip-joint.jpg",
+      "price": "$14.99",
+      "description": "Improves joint function and mobility."
+    },
+    {
+      "id": 8,
+      "name": "Heart Health Support",
+      "image": "../images/heart-health.jpg",
+      "price": "$16.99",
+      "description": "Boosts cardiovascular health."
+    }
+  ]
+}
