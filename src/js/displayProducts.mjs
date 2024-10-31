@@ -3,7 +3,7 @@
 // Fetch main product categories
 export async function fetchProductCategories() {
     try {
-      const response = await fetch('/json/product.json'); // Relative path in public folder
+      const response = await fetch('/json/products.json'); // Relative path in public folder
       const categories = await response.json();
       displayCategories(categories);
     } catch (error) {
