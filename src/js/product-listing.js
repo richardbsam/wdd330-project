@@ -31,7 +31,7 @@ myList.init();
 // Fetch products from the main JSON file
 async function fetchProducts() {
   try {
-    const response = await fetch('https://www.amazon.com/Pet-Supplies-API/s?rh=n%3A2619533011%2Cp_89%3AAPI');
+    const response = await fetch('https://world.openpetfoodfacts.org/api/v0/product/20106836.json');
     const products = await response.json();
     displayProducts(products);
   } catch (error) {
