@@ -6,8 +6,8 @@
     "image": "../images/toys.svg",
     "description": "High-quality toys and accessories for pets.",
     "link": "../json/toys.json"
-    
   },
+  
   {
     "id": 2,
     "name": "Food and Nutrition",
@@ -16,6 +16,7 @@
     "description": "Nutritious food for all your pets.",
     "link": "../json/foods.json"
   },
+
   {
     "id": 3,
     "name": "Health Supplements",
@@ -24,6 +25,7 @@
     "description": "Health supplements to keep your pets healthy.",
     "link": "../json/supplements.json"
   },
+
   {
     "id": 4,
     "name": "Apparel and Beds",
@@ -32,6 +34,7 @@
     "description": "Comfortable apparel and beds for your pets.",
     "link": "../json/beds.json"
   },
+
   {
     "id": 5,
     "name": "Leashes and Collars",
@@ -40,6 +43,7 @@
     "description": "Stylish leashes and collars for pets.",
     "link": "../json/leashes.json"
   },
+
   {
     "id": 6,
     "name": "Grooming Kits",

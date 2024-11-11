@@ -39,6 +39,7 @@ async function fetchProducts() {
   }
 }
 
+
 // Function to display the products on the page
 function displayProducts(products) {
   const productList = document.getElementById('product-list');
